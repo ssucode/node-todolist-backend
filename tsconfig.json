@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "dist/js", // 컴파일된 코드를 넣도록 컴파일러에 지시
+    "rootDir": "src", // src 폴더에 있는 모든 .ts 파일을 컴파일하도록 TypeScript에 알림
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"], // src 디렉토리 및 하위 디렉토리에 있는 파일을 포함하도록 컴파일러에 지시
+  "exclude": ["src/types/*.ts", "node_modules", ".vscode"] // 컴파일 시간 동안 배열에 전달된 파일 또는 폴더를 제외
+}
